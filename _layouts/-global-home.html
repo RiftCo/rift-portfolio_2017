@@ -1,0 +1,37 @@
+---
+layout: -global
+---
+<header>
+	{% include global/_nav.html %}
+	<h1>We design and build <strong>online brands for gamers.</strong></h1>
+	<ul class="client-logos">
+		<li><img src="{{ site.url }}{{ site.baseurl }}/img/sponsor/sponsor-1@2x.png" height="30" alt="happy cient" /></li>
+		<li><img src="{{ site.url }}{{ site.baseurl }}/img/sponsor/sponsor-2@2x.png" height="30" alt="happy cient" /></li>
+		<li><img src="{{ site.url }}{{ site.baseurl }}/img/sponsor/sponsor-3@2x.png" height="30" alt="happy cient" /></li>
+		<li><img src="{{ site.url }}{{ site.baseurl }}/img/sponsor/sponsor-4@2x.png" height="30" alt="happy cient" /></li>
+		<li><img src="{{ site.url }}{{ site.baseurl }}/img/sponsor/sponsor-5@2x.png" height="30" alt="happy cient" /></li>
+	</ul>
+	<div class="scroll">
+		<div class="outside"></div>
+		<div class="inside"></div>
+	</div>
+</header>
+
+{{ content }}
+
+<footer>
+	{% include global/_footer.html %}
+</footer>
+
+
+<!-- imports -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/jquery.unveil.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/style.css">
+
+<!-- scripts -->
+<script>
+	$(document).ready(function() {
+		$("img").unveil();
+	});
+</script>
