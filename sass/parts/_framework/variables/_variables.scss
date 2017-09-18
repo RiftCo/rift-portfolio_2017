@@ -1,0 +1,47 @@
+// Unit of Measurement
+// html is set to 62.5% so that all the REM measurements are based on 10px sizing. ( 0.8rem = 8px )
+$unit: .6rem;
+
+
+// Typography
+$font-family: 'Khand';
+$font-family-alt: 'Roboto Condensed';
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 600;
+
+
+// Radius
+$radius-large: 1.8rem;
+$radius-medium: .6rem;
+$radius-small: .3rem;
+
+
+
+// Animation
+$transition-easeOutCirc: cubic-bezier(0.075, 0.82, 0.165, 1);
+$transition-easeInOutCirc: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+
+
+// Breakpoints
+$maxbody:	1200px;
+$minbody:	960px;
+$tablet:	860px;
+$mobile:	720px;
+
+$content-width: 600px;
+
+
+// Column Width Value [ MOVING TO CSS GRID ]
+$one:       8.33%;
+$two:       16.66%;
+$three:     25%;
+$four:      33.33%;
+$five:      41.66%;
+$six:       50%;
+$seven:     58.33%;
+$eight:     66.66%;
+$nine:      75%;
+$ten:       83.33%;
+$eleven:    91.66%;
+$twelve:    100%;

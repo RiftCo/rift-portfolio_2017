@@ -1,0 +1,161 @@
+############################################################
+# Site Settings
+############################################################
+
+lang: en
+brand_colour: ff3817
+manifest_background_color: ffffff
+manifest_display: standalone
+webmaster_verifications:
+  google: google-verification_code
+  bing: bing-verification_code
+  #alexa: 1234
+  #yandex: 1234
+
+############################################################
+# Navigation
+############################################################
+
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+nowurl: ""
+baseurl: "" # the subpath of your site, e.g. /blog
+permalink: /:categories/:slug
+paginate: 9
+paginate_path: "/works/page:num/"
+
+############################################################
+# Pages
+############################################################
+
+page-home: "/"
+
+############################################################
+# Metadata
+############################################################
+
+title: OllieJT &middot; Digital Designer
+short_title: OllieJT
+description: I design effective user experiences and interfaces that help users understand
+    just how awesome you and your service are. Let’s get in touch to talk about how
+    I can find a solution to your needs.
+logo: /img/logo.png
+logo_svg: /img/logo.svg
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      page_id: "default"
+      title: "This is the title!"
+      description: "This is the description!"
+      date: "2017-01-01 00:00:00 +0000"
+      image: "/img/thumb.jpg"
+
+############################################################
+# Author
+############################################################
+
+author: {{ site.data.author.name }}
+email: contact@olliejt.com
+twitter:
+  username: TheOllieJT
+facebook:
+  app_id: 883220985163662
+  publisher: TheOllieJT
+  admins: olliet95
+social:
+  name: TheOllieJT
+  links:
+    - https://twitter.com/TheOllieJT
+    - https://www.facebook.com/TheOllieJT
+    - https://www.linkedin.com/in/OllieJT
+    - https://www.instagram.com/theolliejt
+
+############################################################
+# Build settings
+############################################################
+
+markdown: kramdown
+
+minify_html: false
+html_press:
+  unquoted_attributes: false
+  drop_empty_values: false
+  strip_crlf: false
+  js_minifier_options: false
+
+webp:
+  enabled: true
+
+  # The quality of the webp conversion 0 to 100 (where 100 is least lossy)
+  quality: 75
+
+  # List of directories containing images to optimize, nested directories will not be checked
+  # By default the generator will search for a folder called `/img` under the site root and process all jpg, png and tiff image files found there.
+  img_dir: ["/img"]
+
+  # add ".gif" to the format list to generate webp for animated gifs as well
+  formats: [".jpeg", ".jpg", ".png", ".tiff"]
+
+  # File extensions for animated gif files
+  gifs: [".gif"]
+
+  # Set to true to always regenerate existing webp files
+  regenerate: false
+
+  # Local path to the WebP utilities to use (relative or absolute)
+  # Omit or leave as nil to use the utilities shipped with the gem, override only to use your local install
+  webp_path: nil
+
+  # List of files or directories to exclude
+  # e.g. custom or hand generated webp conversion files
+  exclude: []
+
+autoprefixer:
+  browsers:
+  - last 2 versions
+
+sitemap:
+  filename: "/sitemap.xml"
+  exclude:
+    - "/atom.xml"
+    - "/feed.xml"
+    - "/feed/index.xml"
+    - "/admin/index.html"
+    - "/admin/"
+    - "/behance/"
+  include_posts:
+    - "/index.html"
+    - "/works.html"
+    - "/works"
+  change_frequency_name: "change_frequency"
+  priority_name: "priority"
+
+############################################################
+# Plugins
+############################################################
+
+plugins_dir:
+  - jekyll-paginate             # Blog Pagination
+  - jekyll-seo-tag              # SEO Metadata
+  - octopress-autoprefixer
+  #- jekyll-feed                 # RSS Feed
+  #- jekyll-sitemap              # Sitemap
+  #- liquid_reading_time         # Reading Time=
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+exclude:
+   - Gemfile
+   - Gemfile.lock
+   - node_modules
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/
+   - sass
+   - .scss
+   - package-lock.json
+   - package.json
+   - gulpfile.js

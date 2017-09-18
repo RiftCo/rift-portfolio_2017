@@ -1,0 +1,44 @@
+// Mixins
+@mixin gradient ($gradient-start, $gradient-end, $gradient-backup) {
+	background: $gradient-backup;
+	background: linear-gradient(to top, $gradient-start 0%, $gradient-end 100%);
+}
+
+@mixin grid ($row-gutter, $col-gutter) {
+	position: relative;
+	width: 100%;
+	height: auto;
+
+	// Grid
+	display: grid;
+	place-items: stretch;
+	justify-items: stretch;
+  grid-column-gap: $col-gutter;
+  grid-row-gap: $row-gutter;
+
+	// Reset
+	&::before,&::after{display: none}
+}
+
+@mixin animate {transition: all .3s $transition-easeInOutCirc;}
+@mixin animate-image {transition: transform 3s $transition-easeOutCirc;}
+
+@mixin cover {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+@mixin bg-image{
+	@include cover;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+}

@@ -1,0 +1,35 @@
+@import "variables/variables.scss";
+@import "variables/mixins.scss";
+@import "variables/colour.scss";
+
+//Global
+
+.container{
+	max-width: $maxbody;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 1reml
+}
+
+.content-center{
+	width: 100%;
+	max-width: $content-width;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wrapper{
+	width: 100vw;
+	height: auto;
+	min-height: 100vh;
+	position: relative;
+	display: block;
+}
+
+// Other
+
+
+@media only screen and (max-width: $maxbody) {}
+@media only screen and (max-width: $minbody) {}
+@media only screen and (max-width: $tablet) {}
+@media only screen and (max-width: $mobile) {}

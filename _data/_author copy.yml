@@ -1,0 +1,71 @@
+############################################################
+# Site Settings
+############################################################
+
+lang: en
+brand_colour: ff3817
+manifest_background_color: ffffff
+manifest_display: standalone
+webmaster_verifications:
+  google: google-verification_code
+  bing: bing-verification_code
+  #alexa: 1234
+  #yandex: 1234
+
+############################################################
+# Navigation
+############################################################
+
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+nowurl: ""
+baseurl: "" # the subpath of your site, e.g. /blog
+permalink: /:categories/:slug
+paginate: 9
+paginate_path: "/works/page:num/"
+
+############################################################
+# Pages
+############################################################
+
+page-home: "/"
+
+############################################################
+# Metadata
+############################################################
+
+title: OllieJT &middot; Digital Designer
+short_title: OllieJT
+description: I design effective user experiences and interfaces that help users understand
+    just how awesome you and your service are. Let’s get in touch to talk about how
+    I can find a solution to your needs.
+logo: /img/logo.png
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      page_class: ""
+      title: ""
+      description: ""
+      date: ""
+      image: "/img/thumb.jpg"
+
+############################################################
+# Author
+############################################################
+
+author: Ollie Taylor
+email: contact@olliejt.com
+twitter:
+  username: TheOllieJT
+facebook:
+  app_id: 883220985163662
+  publisher: TheOllieJT
+  admins: olliet95
+social:
+  name: TheOllieJT
+  links:
+    - https://twitter.com/TheOllieJT
+    - https://www.facebook.com/TheOllieJT
+    - https://www.linkedin.com/in/OllieJT
+    - https://www.instagram.com/theolliejt

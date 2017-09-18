@@ -1,0 +1,24 @@
+---
+permalink: manifest.json
+---
+
+{
+  "lang": "{{ site.lang }}",
+  "background_color": "#{{ site.manifest_background_color }}",
+  "theme_color": "#{{ site.brand_colour }}",
+  "name": "{{ site.title }}",
+  "short_name": "{{ site.short_title }}",
+  "display": "{{ site.manifest_display}}",
+  "icons": [
+    {
+      "src": "img/icon-apple.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "img/logo.svg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

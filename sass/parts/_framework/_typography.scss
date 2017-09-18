@@ -1,0 +1,94 @@
+@import "variables/variables.scss";
+@import "variables/mixins.scss";
+@import "variables/colour.scss";
+
+
+// Form
+body, p, li, figcaption {
+	font-size: 				1.8rem;
+	line-height: 			3rem;
+	font-weight: 			$font-weight-regular;
+	color: 						$text-colour;
+}
+p, ul, ol, figcaption {
+	font-family: $font-family-alt, sans-serif;
+
+	a{color: 					$link-colour-before;}
+	a:hover{color: 		$link-colour-after;}
+}
+h1 {
+	font-size: 				4.8rem;						// H2 + 8
+	line-height: 			6rem;					// +
+	font-weight: 			$font-weight-bold;
+	color: 						$txt-darker;
+}
+h2 {
+	font-size: 				3.6rem;					// H3 + 4
+	line-height: 			4.8rem;					// + 12
+	font-weight: 			$font-weight-regular;
+}
+h3 {
+	font-size: 				3rem;				// H4 + 4
+	line-height: 			4.2rem;					// + 12
+	font-weight: 			$font-weight-medium;
+}
+h4 {
+	font-size: 				2.4rem;					// H5 + 8
+	line-height: 			3.6rem;					// + 12
+	font-weight: 			$font-weight-regular;
+}
+h5 {
+	font-size: 				2.1rem;					// P + 0
+	line-height: 			3.3rem;					// + 12
+	font-weight: 			$font-weight-medium;
+}
+h6 {
+	font-size: 				1.5rem;					// P - .2
+	line-height: 			2.7rem;					// + 12
+	font-weight: 			$font-weight-regular;
+	text-transform: 	uppercase;
+}
+
+
+// Spacing
+h1, h2, h3, h4, h5, h6, p{
+	margin:						0;
+	margin-top: 			0;
+	margin-bottom: 		0;
+	color: 						$text-colour;
+}
+article, .typography{
+	h1, h2, h3, h4, h5, h6{
+		margin-top: 			0;
+		margin-bottom: 		.6rem;
+	}
+	p{
+		margin-top: 			.6rem;
+		margin-bottom: 		1.8rem;
+		&:last-of-type {margin-bottom: 0;}
+	}
+}
+
+
+// Sub Styles
+a {
+	@include animate;
+	text-decoration: 	none;
+	display: 					inline-block;
+	color: 						inherit;
+}
+a:hover {color: inherit;}
+strong,b,em{
+	font-weight: inherit !important;
+	color: $txt-darker;
+}
+hr{border-color: $shade-2}
+
+.dark{
+	background-color: $background-dark !important;
+	h2, h3, h4, h5, h6, p, li, figcaption, pre, dt,dd,td{color: rgba(255,255,255,0.88) !important}
+	h1,strong,b,em,th{color: white !important}
+	hr{border-color: $shade-4 !important}
+}
+.txt-highlight{			color: $brand !important}
+.txt-reset{					color: $text-colour!important}

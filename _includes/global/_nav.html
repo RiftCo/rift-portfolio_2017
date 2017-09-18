@@ -1,0 +1,23 @@
+<nav>
+
+	<a class="logo" href="{{ site.url }}{{ site.baseurl }}/">
+		<img src="{{ site.url }}{{ site.baseurl }}{{ site.logo_svg }}" width="206" height="60" alt="{{ site.title }}" />
+	</a>
+
+	<ul class="menu">
+
+		{% for menu_item in site.data.menu %}
+		<li
+			{% if page.nav == "{{ menu_item.name }}" %}
+				class="nav-item active"
+			{% else %}
+				class="nav-item"
+			{% endif %}
+		>
+			<a class="nav-item active" href="{{ site.url }}{{ site.baseurl }}{{ menu_item.url }}">{{ menu_item.name }}</a>
+		</li>
+		{% endfor %}
+
+	</ul>
+
+</nav>

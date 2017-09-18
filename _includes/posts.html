@@ -1,0 +1,15 @@
+<section class="card-container" id="{{ page.posts_id }}">
+	{% for post in site.posts limit:3 %}
+
+		{% if post.behance == true %}
+			{% include card.html %}
+
+
+		{% else %}
+			{% include card_alt.html %}
+
+
+		{% endif %}
+
+	{% endfor %}
+</section>

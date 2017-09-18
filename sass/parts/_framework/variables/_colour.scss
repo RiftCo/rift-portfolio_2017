@@ -1,0 +1,19 @@
+// Colours
+$brand: 						#E11B51;
+$brand-alt: 				#B40F3C;
+$Complementary: 		#00C597;
+
+$shade-1: 					#ffffff;
+$shade-2: 					#B2B2B2;
+$shade-3: 					#666666;
+$shade-4: 					#484D4B;
+
+$link-colour-before: $brand;
+$link-colour-after: $brand-alt;
+
+$text-colour: $shade-4;
+$txt-lighter: lighten($text-colour, 30);
+$txt-darker: darken($text-colour, 30);
+
+$background: $shade-1;
+$background-dark: $txt-darker;

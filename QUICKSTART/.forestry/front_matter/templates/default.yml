@@ -1,0 +1,79 @@
+---
+pages:
+- contact.html
+- works/index.html
+- 404.html
+hide_body: true
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: global_default
+- type: text
+  label: Permalink
+  name: permalink
+  hidden: false
+- type: select
+  name: nav
+  config:
+    source:
+      type: simple
+    options:
+    - Home
+    - About
+    - Works
+    - Contact
+  label: Nav Highlight
+  hidden: true
+  default: Works
+- name: type
+  type: select
+  config:
+    source:
+      type: simple
+    options:
+    - website
+    - article
+  label: Page Type
+  hidden: true
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: description
+  type: textarea
+  label: Description
+  default: I love design, and crave challenging projects with clients that care about
+    delivering a high quality product to their users. I think we could make a great
+    team. Let’s talk about how I can help you with your next project.
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: 2017-07-24 12:06:02 +0000
+- name: image
+  type: file
+  label: Image
+  default: "/img/photo-shanghai.jpg"
+- type: field_group
+  name: header_title
+  label: Header Title
+  fields:
+  - type: text
+    name: context
+    label: Context
+  - type: text
+    name: maintitle
+    label: Title
+  - type: textarea
+    config:
+      wysiwyg: true
+    label: Sub Title
+    name: subtitle
+- type: text
+  label: Article Container
+  name: posts_id
+  description: ID tag
+  default: blog

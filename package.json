@@ -1,0 +1,37 @@
+{
+  "name": "OllieJT",
+  "version": "0.1.0",
+  "description": "My Jekyll portfolio site",
+  "main": "./dev/gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "npm-gui": "^0.3.1"
+  },
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-connect": "^5.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-series": "^1.0.2",
+    "gulp-util": "^3.0.8",
+    "path": "^0.12.7",
+    "pretty-error": "^2.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheOllieJT/theolliejt.github.git"
+  },
+  "keywords": [],
+  "author": "Ollie Taylor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TheOllieJT/theolliejt/issues"
+  },
+  "homepage": "https://github.com/TheOllieJT/theolliejt#readme"
+}

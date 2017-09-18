@@ -1,0 +1,91 @@
+---
+pages:
+- about.html
+hide_body: true
+fields:
+- name: layout
+  label: Layout
+  type: text
+  hidden: true
+  default: global_default
+- type: text
+  label: Permalink
+  name: permalink
+  hidden: false
+  default: ''
+- type: select
+  name: nav
+  config:
+    source:
+      type: simple
+    options:
+    - Home
+    - About
+    - Works
+    - Contact
+  label: Nav Highlight
+  hidden: true
+- name: type
+  type: select
+  config:
+    source:
+      type: simple
+    options:
+    - website
+    - article
+  label: Page Type
+  default: website
+  hidden: true
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: About Ollie
+- name: description
+  type: textarea
+  label: Description
+  default: I love design, and crave challenging projects with clients that care about
+    delivering a high quality product to their users. I think we could make a great
+    team. Let’s talk about how I can help you with your next project.
+- name: date
+  label: Date
+  type: datetime
+  hidden: false
+  default: 2017-09-05 05:04:21 +0000
+- name: image
+  type: file
+  label: Image
+  default: "/img/photo-iceland.jpg"
+- type: field_group
+  name: header_title
+  label: Header Title
+  fields:
+  - type: text
+    name: context
+    label: Context
+  - type: text
+    name: maintitle
+    label: Title
+  - type: textarea
+    config:
+      wysiwyg: true
+    label: Sub Title
+    name: subtitle
+- type: field_group
+  label: Inline Image & Text
+  name: inline_img_txt
+  fields:
+  - type: text
+    name: title
+    label: Title
+  - type: textarea
+    name: content
+    label: Content
+    config:
+      wysiwyg: true
+  - type: file
+    name: image
+    label: Image
+  - type: file
+    name: image-retina
+    label: Retina Image

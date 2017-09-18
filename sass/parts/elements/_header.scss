@@ -1,0 +1,10 @@
+@import "../_framework/variables/variables.scss";
+@import "../_framework/variables/mixins.scss";
+@import "../_framework/variables/colour.scss";
+
+// Header
+
+@media only screen and (max-width: $maxbody) {}
+@media only screen and (max-width: $minbody) {}
+@media only screen and (max-width: $tablet) {}
+@media only screen and (max-width: $mobile) {}

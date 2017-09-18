@@ -1,0 +1,13 @@
+
+{% if post.behance == true %}
+	<a class="card behance-post" href="{{ post.behance_url }}" target="_blank" rel="noopener">
+	{% else %}
+	<a class="card" href="{{ site.baseurl }}{{ post.url }}" target="_self">
+	{% endif %}
+
+	<img class="thumb" data-src="{{ site.url }}{{ site.baseurl }}{{ post.image }}" width="480" height="270" alt="{{ post.title }} thumbnail" />
+	<div class="details">
+		<h6 class="txt-highlight">{{ post.categories }}</h6><h6 class="txt-60">{{ post.date | date: "%b %-d, %Y" }}</h6>
+		<h4>{{ post.title }}</h4>
+	</div>
+</a>
