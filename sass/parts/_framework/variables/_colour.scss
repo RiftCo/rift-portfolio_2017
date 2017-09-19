@@ -1,19 +1,18 @@
 // Colours
-$brand: 						#E11B51;
-$brand-alt: 				#B40F3C;
-$Complementary: 		#00C597;
+$brand: 						#503296;
+$brand-alt: 				#b8b8e1;
 
-$shade-1: 					#ffffff;
-$shade-2: 					#B2B2B2;
-$shade-3: 					#666666;
-$shade-4: 					#484D4B;
+$shade-1: 					#281e50;
+$shade-2: 					#821e96;
+$shade-3: 					#484557;
+$shade-4: 					#22202E;
 
 $link-colour-before: $brand;
 $link-colour-after: $brand-alt;
 
-$text-colour: $shade-4;
+$text-colour: rgba(255,255,255,.88);
 $txt-lighter: lighten($text-colour, 30);
 $txt-darker: darken($text-colour, 30);
 
-$background: $shade-1;
+$background: $shade-4;
 $background-dark: $txt-darker;

@@ -17,8 +17,8 @@ p, ul, ol, figcaption {
 	a:hover{color: 		$link-colour-after;}
 }
 h1 {
-	font-size: 				4.8rem;						// H2 + 8
-	line-height: 			6rem;					// +
+	font-size: 				4.2rem;						// H2 + 8
+	line-height: 			5.4rem;					// +
 	font-weight: 			$font-weight-bold;
 	color: 						$txt-darker;
 }
@@ -46,7 +46,6 @@ h6 {
 	font-size: 				1.5rem;					// P - .2
 	line-height: 			2.7rem;					// + 12
 	font-weight: 			$font-weight-regular;
-	text-transform: 	uppercase;
 }
 
 
@@ -55,8 +54,8 @@ h1, h2, h3, h4, h5, h6, p{
 	margin:						0;
 	margin-top: 			0;
 	margin-bottom: 		0;
-	color: 						$text-colour;
 }
+h1, h2, h3, h4, h5, h6{ color: white}
 article, .typography{
 	h1, h2, h3, h4, h5, h6{
 		margin-top: 			0;
@@ -79,16 +78,18 @@ a {
 }
 a:hover {color: inherit;}
 strong,b,em{
+	padding: 0 .6rem;
+	color: white;
+	background-color: $shade-2;
 	font-weight: inherit !important;
-	color: $txt-darker;
 }
 hr{border-color: $shade-2}
 
-.dark{
-	background-color: $background-dark !important;
-	h2, h3, h4, h5, h6, p, li, figcaption, pre, dt,dd,td{color: rgba(255,255,255,0.88) !important}
-	h1,strong,b,em,th{color: white !important}
-	hr{border-color: $shade-4 !important}
-}
+//.dark{
+	//background-color: $background-dark !important;
+	//h2, h3, h4, h5, h6, p, li, figcaption, pre, dt,dd,td{color: rgba(255,255,255,0.88) !important}
+	//h1,strong,b,em,th{color: white !important}
+	//hr{border-color: $shade-4 !important}
+//}
 .txt-highlight{			color: $brand !important}
 .txt-reset{					color: $text-colour!important}

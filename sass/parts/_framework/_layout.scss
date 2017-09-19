@@ -5,10 +5,11 @@
 //Global
 
 .container{
-	max-width: $maxbody;
+	max-width: $minbody;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 0 1reml
+	position: relative;
+	z-index: 99;
 }
 
 .content-center{
@@ -25,6 +26,48 @@
 	position: relative;
 	display: block;
 }
+
+.seperator{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100vw;
+	line-height: 1em;
+	font-size: 0;
+	z-index: 1000;
+	svg{
+		min-width: 100vw;
+		height: auto;
+	}
+	&.seperator-top{top: -3rem;}
+	&.seperator-bottom{bottom: -3rem;}
+}
+.background{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+.subtitle{
+	max-width: 60.4rem;
+	margin-bottom: 3rem;
+	h6{
+		background-color: $shade-2;
+		color: white !important;
+		padding: 0 .6rem;
+		display: inline-block;
+	}
+}
+
+
+section,header,footer{position: relative;}
+section{z-index: 20}
+header,footer{z-index: 30}
 
 // Other
 

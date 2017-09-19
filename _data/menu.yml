@@ -1,17 +1,11 @@
 ############################################################
 # Author
 ############################################################
-- name: home
-  url: /
+- name: Services
+  url: .
 
-- name: services
-  url: /services
-
-- name: about
-  url: /about
-
-- name: projects
+- name: Projects
   url: /projects
 
-- name: contact
+- name: Contact
   url: /contact
