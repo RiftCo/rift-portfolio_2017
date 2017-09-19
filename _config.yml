@@ -16,9 +16,9 @@ webmaster_verifications:
 # Navigation
 ############################################################
 
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://riftco.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 nowurl: ""
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "rift-portfolio_2017" # the subpath of your site, e.g. /blog
 permalink: /:categories/:slug
 paginate: 9
 paginate_path: "/works/page:num/"
