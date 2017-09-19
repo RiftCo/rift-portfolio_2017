@@ -38,19 +38,19 @@ nav{
 
 header{
 	.title{
-		padding: 12rem 0 15rem 0;
+		padding: 15rem 3rem 20rem 3rem;
 		text-align: center;
 	}
 	.client-logos{
 		text-align: center;
-		margin: 0 -1.5rem;
+		margin: 0 -3rem -3rem 0;
 		padding-bottom: 6rem;
 		h6{
 			color: $brand-alt;
 			margin-bottom: 3rem;
 		}
 		li{
-			padding: 0 1.5rem;
+			padding: 0 3rem 3rem 0;
 			display: inline-block;
 		}
 	}

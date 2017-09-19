@@ -33,8 +33,8 @@ page-home: "/"
 # Metadata
 ############################################################
 
-title: OllieJT &middot; Digital Designer
-short_title: OllieJT
+title: Rift &middot; eSports Web Design
+short_title: Rift
 description: I design effective user experiences and interfaces that help users understand
     just how awesome you and your service are. Let’s get in touch to talk about how
     I can find a solution to your needs.
@@ -58,18 +58,18 @@ defaults:
 author: {{ site.data.author.name }}
 email: contact@olliejt.com
 twitter:
-  username: TheOllieJT
+  username: RiftCo
 facebook:
   app_id: 883220985163662
   publisher: TheOllieJT
   admins: olliet95
 social:
-  name: TheOllieJT
+  name: RiftCo
   links:
-    - https://twitter.com/TheOllieJT
-    - https://www.facebook.com/TheOllieJT
-    - https://www.linkedin.com/in/OllieJT
-    - https://www.instagram.com/theolliejt
+    - https://twitter.com/RiftCo
+    - https://www.facebook.com/RiftCo
+    - https://www.linkedin.com/in/RiftCo
+    - https://www.instagram.com/RiftCo
 
 ############################################################
 # Build settings

@@ -12,6 +12,7 @@
 	h3{
 		margin-top: 1.8rem;
 		margin-bottom: 1.8rem;
+		text-align: center;
 	}
 	h6{color: $brand-alt}
 	.author{display: inline-block}
@@ -48,12 +49,17 @@
 			//line-height: 1em;
 			margin-top: 0;
 			margin-bottom: 0;
+			text-align: left;
 		}
+	}
+	.referral-inside{
+		max-width: 60.4rem;
+		margin: 0 auto;
 	}
 }
 
 .services{
-	padding: 3rem 0;
+	padding: 6rem 0;
 	margin-right: -1.8rem;
 	margin-bottom: -1.8rem;
 	font-size: 0;
@@ -70,7 +76,10 @@
 		border-radius: 1.8rem;
 	}
 }
-.works-container{background-color: $background}
+.works-container{
+	background-color: $background;
+	padding: 6rem 0;
+}
 .works{
 	width: 100%;
 	display: flex;

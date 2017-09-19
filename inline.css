@@ -387,6 +387,7 @@ hr {
   margin-right: auto;
   position: relative;
   z-index: 99;
+  padding: 0 1.8rem;
 }
 
 .content-center {
@@ -510,13 +511,13 @@ nav .nav-item .active {
 }
 
 header .title {
-  padding: 12rem 0 15rem 0;
+  padding: 15rem 3rem 20rem 3rem;
   text-align: center;
 }
 
 header .client-logos {
   text-align: center;
-  margin: 0 -1.5rem;
+  margin: 0 -3rem -3rem 0;
   padding-bottom: 6rem;
 }
 
@@ -526,7 +527,7 @@ header .client-logos h6 {
 }
 
 header .client-logos li {
-  padding: 0 1.5rem;
+  padding: 0 3rem 3rem 0;
   display: inline-block;
 }
 

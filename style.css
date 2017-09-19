@@ -108,6 +108,7 @@
 .referral h3, .team h3 {
   margin-top: 1.8rem;
   margin-bottom: 1.8rem;
+  text-align: center;
 }
 
 .referral h6, .team h6 {
@@ -164,10 +165,16 @@
 .referral .team-members h2, .referral .team-members h3, .referral .team-members h4, .referral .team-members h5, .referral .team-members h6, .team .team-members h2, .team .team-members h3, .team .team-members h4, .team .team-members h5, .team .team-members h6 {
   margin-top: 0;
   margin-bottom: 0;
+  text-align: left;
+}
+
+.referral .referral-inside, .team .referral-inside {
+  max-width: 60.4rem;
+  margin: 0 auto;
 }
 
 .services {
-  padding: 3rem 0;
+  padding: 6rem 0;
   margin-right: -1.8rem;
   margin-bottom: -1.8rem;
   font-size: 0;
@@ -190,6 +197,7 @@
 
 .works-container {
   background-color: #22202E;
+  padding: 6rem 0;
 }
 
 .works {
