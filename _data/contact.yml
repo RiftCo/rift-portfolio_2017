@@ -1,12 +1,12 @@
 - name: Twitter
   user: RiftCo
   icon: /img/icon_twitter.svg
-  url: /img/sponsor/sponsor-1@2x.png
+  url: https://twitter.com/riftco
 
 - name: Discord
   user: RiftCo
   icon: /img/icon_discord.svg
-  url: /img/sponsor/sponsor-1@2x.png
+  url: https://discord.gg/EbpbYae
 
 - name: Behance
   user: RiftCo
@@ -16,4 +16,4 @@
 - name: Email
   user: hello@rift.co.uk
   icon: /img/icon_twitter.svg
-  url: /img/sponsor/sponsor-1@2x.png
+  url: mailto:hello@rift.co.uk
