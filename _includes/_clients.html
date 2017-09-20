@@ -1,7 +1,7 @@
 <ul>
-	{% for menu_item in site.data.clients %}
+	{% for client in site.data.clients %}
 	<li>
-		<li><img src="{{ site.url }}{{ site.baseurl }}{{ menu_item.image }}" height="30" alt="{{ menu_item.name }} website design and {{ menu_item.name }} website development" /></li>
+		<li><img data-src="{{ site.url }}{{ site.baseurl }}{{ client.image }}" height="30" alt="{{ client.name }} website design and {{ client.name }} website development" /></li>
 	</li>
 	{% endfor %}
 </ul>

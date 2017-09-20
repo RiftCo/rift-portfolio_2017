@@ -1,4 +1,45 @@
 /* Hello there! Enjoying my code? Send me a tweet @TheOllieJT */
+footer {
+  padding: 12rem 1.8rem;
+}
+
+footer h6 {
+  color: #b8b8e1;
+}
+
+footer .legal {
+  margin-top: 6rem;
+}
+
+#contact ul {
+  margin: -.9rem;
+}
+
+#contact ul li {
+  display: inline-block;
+}
+
+#contact .contact_link {
+  padding: 1.8rem;
+  border: 1px solid rgba(184, 184, 225, 0.12);
+  border-radius: 1.8rem;
+  margin: .9rem;
+}
+
+#contact .contact_link img, #contact .contact_link p {
+  display: inline-block;
+}
+
+#contact .contact_link img {
+  line-height: 3rem;
+  margin-right: .9rem;
+  margin-top: .6rem;
+}
+
+#contact .contact_link:hover {
+  border-color: rgba(184, 184, 225, 0.4);
+}
+
 .card-container {
   position: relative;
   width: 100%;

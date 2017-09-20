@@ -270,12 +270,12 @@ gulps.registerSeries('build',
 		//CSS
 		"sass_inline",							// Compile SASS
 		"prefix_inline",						// Prefix CSS
-		"minify-css_inline",				// Minify CSS
+		//"minify-css_inline",				// Minify CSS
 
 		//CSS
 		"sass",							// Compile SASS
 		"prefix",						// Prefix CSS
-		"minify-css",				// Minify CSS
+		//"minify-css",				// Minify CSS
 
 		"jekyll",							// Compile SASS
 

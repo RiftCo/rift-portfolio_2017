@@ -189,7 +189,7 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   background-color: #22202E;
-  font-family: "Interface", "Interface", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
@@ -276,10 +276,6 @@ body, p, li, figcaption {
   line-height: 3rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.88);
-}
-
-p, ul, ol, figcaption {
-  font-family: "Interface", sans-serif;
 }
 
 p a, ul a, ol a, figcaption a {

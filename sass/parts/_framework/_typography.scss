@@ -11,8 +11,6 @@ body, p, li, figcaption {
 	color: 						$text-colour;
 }
 p, ul, ol, figcaption {
-	font-family: $font-family-alt, sans-serif;
-
 	a{color: 					$link-colour-before;}
 	a:hover{color: 		$link-colour-after;}
 }

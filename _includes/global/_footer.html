@@ -1,1 +1,25 @@
-<div class="legal"><h6>&copy; {{ site.time | date: '%Y' }} <span>OllieJT</span>. All Rights Reserved.</h6></div>
+<div id="contact" class="container">
+
+	<div class="subtitle">
+		<h6>Say Hello!</h6>
+		<h2>We're looking forward to hearing from you soon!</h2>
+	</div>
+
+	<ul>
+
+			{% for contact in site.data.contact %}
+			<li>
+				<a class="contact_link" href="{{ contact.url }}" target="_blank" rel="noopener">
+					<img data-src="{{ site.url }}{{ site.baseurl }}{{ contact.icon }}" height="18" width="18" alt="{{ contact.name }} Digital Rift" />
+					<p>{{ contact.user }}</p>
+				</a>
+			</li>
+			{% endfor %}
+
+	</ul>
+
+</div>
+
+<div class=" container legal">
+	<h6>&copy; {{ site.time | date: '%Y' }} <span>Digital Rift</span>. All Rights Reserved.</h6>
+</div>

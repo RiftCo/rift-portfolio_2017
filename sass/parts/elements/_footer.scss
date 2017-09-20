@@ -3,6 +3,33 @@
 @import "../_framework/variables/colour.scss";
 
 // Footer
+footer{
+	padding: 12rem 1.8rem;
+	h6{color: $brand-alt}
+	.legal{margin-top: 6rem}
+}
+
+#contact{
+	ul{
+		margin: -.9rem;
+		li{display: inline-block;}
+	}
+	.contact_link{
+		padding: 1.8rem;
+		border: 1px solid transparentize($brand-alt, .88);
+		border-radius: 1.8rem;
+		margin: .9rem;
+		img,p{display: inline-block;}
+		img{
+			line-height: 3rem;
+			margin-right: .9rem;
+			margin-top: .6rem;
+		}
+		&:hover{
+			border-color: transparentize($brand-alt, .6);
+		}
+	}
+}
 
 @media only screen and (max-width: $maxbody) {}
 @media only screen and (max-width: $minbody) {}
