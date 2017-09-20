@@ -115,10 +115,6 @@
   color: #b8b8e1;
 }
 
-.referral .author, .team .author {
-  display: inline-block;
-}
-
 .referral .avatar, .team .avatar {
   border-radius: 100%;
   border-top-left-radius: 1.8rem;
@@ -137,10 +133,11 @@
 .referral .quote, .team .quote {
   font-size: 1.8rem;
   line-height: 1em;
+  text-align: left;
 }
 
 .referral .quote.quote-end, .team .quote.quote-end {
-  text-align: right;
+  text-align: right !important;
 }
 
 .referral .background, .team .background {
@@ -171,9 +168,10 @@
 .referral .referral-inside, .team .referral-inside {
   max-width: 60.4rem;
   margin: 0 auto;
+  text-align: center;
 }
 
-.services {
+#services {
   padding: 6rem 0;
   margin-right: -1.8rem;
   margin-bottom: -1.8rem;
@@ -186,7 +184,7 @@
   background-color: #22202E;
 }
 
-.services li {
+#services li {
   width: calc(50% - 1.8rem);
   margin: 0 1.8rem 1.8rem 0;
   display: inline-block;
@@ -222,6 +220,8 @@
   overflow: hidden;
   font-size: 0;
   line-height: 1em;
+  box-shadow: 0 0 0 transparent;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .works li .details {
@@ -240,6 +240,25 @@
 .works li .details h5, .works li .details h6, .works li .details span {
   width: 100%;
   display: block;
+}
+
+.works li .details h5, .works li .details h6 {
+  transform: translateY(20rem);
+  opacity: 0;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.works li .details h6 {
+  transition-delay: .1s;
+}
+
+.works li:hover {
+  box-shadow: 0 1.2rem 3.6rem rgba(0, 0, 0, 0.3);
+}
+
+.works li:hover h5, .works li:hover h6 {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .works img {
