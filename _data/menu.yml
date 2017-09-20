@@ -2,10 +2,10 @@
 # Author
 ############################################################
 - name: Services
-  url: .
+  url: /#services
 
 - name: Projects
-  url: /projects
+  url: /#works
 
 - name: Contact
-  url: /contact
+  url: /#contact
