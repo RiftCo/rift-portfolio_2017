@@ -94,5 +94,11 @@ header{
 
 @media only screen and (max-width: $maxbody) {}
 @media only screen and (max-width: $minbody) {}
-@media only screen and (max-width: $tablet) {}
+@media only screen and (max-width: $tablet) {
+	.menu{display: none}
+	.logo{
+		width: 100%;
+		text-align: center;
+	}
+}
 @media only screen and (max-width: $mobile) {}

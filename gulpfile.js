@@ -77,7 +77,7 @@ gulps.registerTasks({
 	"watch_dev" : (function(done) {
 		setTimeout(function() {
 			gulp.watch(paths.sass, 							["convert_dev_sass"])
-			gulp.watch(paths.build_html, 				["updated_dev"])
+			//gulp.watch(paths.build_html, 				["updated_dev"])
 			gulp.watch(paths.build_css, 				["updated_dev"])
 
 			done(
@@ -177,18 +177,31 @@ gulps.registerTasks({
 	////
 	//// Jekyll
 	////
-	"jekyll" : (function(done) {
+	"killjekyll" : (function(done) {
 		setTimeout(function() {
 
 			const killjekyll = child.spawn('pkill', [
-				'-f',
+				'-F',
 				'--jekyll'
 			]);
+
+			const killjekylltwo = child.spawn('kill', [
+				'-9',
+				'18659'
+			]);
+
+			done();
+		}, 2000);
+	}),
+	
+
+	"jekyll" : (function(done) {
+		setTimeout(function() {
 
 			const jekyll = child.spawn('jekyll', [
 				'serve',
 				'--watch',
-				//'--detach',
+				'--detach',
 				'--incremental'
 				//'--drafts',
 				//'--port 9876'
@@ -204,7 +217,7 @@ gulps.registerTasks({
 			jekyll.stderr.on('data', jekyllLogger);
 
 			done();
-		}, 5000);
+		}, 10000);
 	}),
 	"jekyll_build" : (function(done) {
 		setTimeout(function() {
@@ -224,7 +237,7 @@ gulps.registerTasks({
 			jekyll.stderr.on('data', jekyllLogger);
 
 			done();
-		}, 5000);
+		}, 10000);
 	}),
 
 
@@ -358,7 +371,8 @@ gulp.task('default', function() {
 gulps.registerSeries('jekyll',
 	[
 		// Jekyll
-		"jekyll",
+		"killjekyll",
+		"jekyll"
 
 	], function() {
 	console.log(util.colors.green.bold('DEV MODE: ') + util.colors.white.bold('ENABLED') + util.colors.red.bold(' Watching...'))
@@ -372,7 +386,8 @@ gulps.registerSeries('dev',
 		"convert_build_sass_inline",
 
 		// Localhost
-		"connect",
+		//"connect",
+		"killjekyll",
 		"jekyll",
 		"watch_dev"
 

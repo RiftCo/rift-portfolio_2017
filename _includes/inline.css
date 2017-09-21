@@ -566,3 +566,13 @@ header .scroll .inside {
 #particles-js canvas {
   z-index: 0 !important;
 }
+
+@media only screen and (max-width: 860px) {
+  .menu {
+    display: none;
+  }
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+}
