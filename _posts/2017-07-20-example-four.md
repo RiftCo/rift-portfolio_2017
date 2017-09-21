@@ -1,97 +1,30 @@
 ---
 layout: article
 date: 2017-07-20 00:00:00 +0000
-title: Orci varius natoque!
-client: Name
-services: Planning, Design, Development
-description: Suspendisse gravida vitae velit in accumsan. Sed mattis tristique ante, pellentesque gravida ligula venenatis at. Mauris sagittis pellentesque elit, sit amet commodo purus viverra porta. Nam eget turpis lacus.
+title: Making sure esports teams get the website's they deserve
+client: Esportsify
+services: Frontend Development
+description: Working with Esportsify we helped some of the best esports teams get the websites looking like they deserved.
 tags:
-- Onesome
-- Foursome
+- HTML
+- jQuery
+- CodeIgniter
 categories: project
 image: "/img/demo/example_4.jpg"
 ---
-### Headings
 
-# Heading 1
+### The Challenge
 
-## Heading 2
+Esportsify provides esports themed websites to tens of thousands of teams all around the world and are the largest esports website provider around.
 
-### Heading 3
+They provide a range of pre-made templates for teams to choose from, but their elite esports teams work with Esportsify directly to create their own unique, branded designs. We were excited to work with Esportsify to turn these bespoke website designs into templates that integrated directly into their platform.
 
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
+In the process of this project we had the honour of working with TCM Gaming, Luminosity, Ninjas in Pyjamas and more.
 
 ---
 
-### Text
+<img src="//placehold.it/960x600" />
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quis quos in quas nesciunt at accusantium dolor distinctio enim. Blanditiis officia, aliquid voluptas iste fuga tempore veniam aliquam deserunt in!
+<img src="//placehold.it/960x600" />
 
-The following snippet of text is rendered as **bold text**.
-
-The following snippet of text is rendered as *italicized text*.
-
-[I'm an inline-style link](https://www.google.com)
-
-For example, `<section>` should be wrapped as inline.
-
----
-
-### Unordered List
-
-* Lorem ipsum dolor sit amet, consectetur adipisicing.
-* Lorem ipsum dolor sit amet.
-* Lorem ipsum dolor sit amet, consectetur.
-	* Lorem ipsum dolor sit amet, consectetur adipisicing.
-	* Lorem ipsum dolor sit amet.
-	* Lorem ipsum dolor sit amet, consectetur.
-	* Lorem ipsum dolor.
-* Lorem ipsum dolor.
-* Lorem ipsum dolor sit amet.
-
-### Ordered List
-
-1. Lorem ipsum dolor sit amet, consectetur adipisicing.
-1. Lorem ipsum dolor sit amet.
-1. Lorem ipsum dolor sit amet, consectetur.
-	1. Lorem ipsum dolor sit amet, consectetur adipisicing.
-	1. Lorem ipsum dolor sit amet.
-	1. Lorem ipsum dolor sit amet, consectetur.
-	1. Lorem ipsum dolor.
-1. Lorem ipsum dolor.
-1. Lorem ipsum dolor sit amet.
-
----
-
-### Table
-
-First Header | Second Header
------------- | -------------
-Content Cell | Content Cell
-Content Cell | Content Cell
-Content Cell | Content Cell
-
----
-
-### Blockquote
-
-> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi beatae tempora assumenda dolores ut dolore blanditiis fugit ad ex nam labore adipisci dicta esse, velit dolorum itaque inventore illo ratione!
-
----
-
-### Code
-
-	var num1 = 3;
-	var num2 = 2;
-
-	function add(a, b) {
-		return a + b;
-	}
-
-	var sum = add(num1, num2);
-
-	console.log(sum);
+<img src="//placehold.it/960x600" />
