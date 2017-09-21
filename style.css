@@ -295,6 +295,7 @@ footer .legal {
   text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  z-index: 10;
 }
 
 .works li .details h5, .works li .details h6, .works li .details span {

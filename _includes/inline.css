@@ -347,6 +347,10 @@ article p:last-of-type, .typography p:last-of-type, .subtitle p:last-of-type {
   margin-bottom: 0;
 }
 
+article img, .typography img, .subtitle img {
+  max-width: 100%;
+}
+
 a {
   transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   text-decoration: none;
@@ -595,7 +599,7 @@ header .scroll .inside {
 }
 
 @media only screen and (max-width: 720px) {
-  header h1 {
+  .title h1 {
     height: 18rem;
   }
 }
