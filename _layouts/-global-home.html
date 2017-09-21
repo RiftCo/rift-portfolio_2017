@@ -5,7 +5,7 @@ layout: -global
 <header>
 	{% include global/_nav.html %}
 	<div class="title">
-		<h1>We design and build <strong id="typing">online brands for gamers.</strong></h1>
+		<h1>We design and build <strong id="typing"></strong></h1>
 	</div>
 	<div class="client-logos">
 		<h6>Just some of the awesome gamers we’ve enjoyed working with...</h6>
@@ -50,5 +50,9 @@ layout: -global
 	$('#typing').typeIt({
 		strings: [{% for type in site.data.title %}"{{type.title}}",{% endfor %}],
      // options
+		 //speed: 50,
+     breakLines: false,
+		 loop: true,
+     //autoStart: false
 });
 </script>
