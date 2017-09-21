@@ -3,3 +3,10 @@ _site/
 .jekyll-metadata
 node_modules
 *.DS_Store*
+_includes/.DS_Store
+_includes/.DS_Store
+_includes/global/.DS_Store
+img/.DS_Store
+img/article/.DS_Store
+sass/parts/.DS_Store
+sass/parts/_framework/.DS_Store
