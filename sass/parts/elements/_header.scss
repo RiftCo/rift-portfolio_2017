@@ -41,6 +41,7 @@ header{
 		padding: 15rem 3rem 20rem 3rem;
 		text-align: center;
 	}
+	strong{padding: 0 !important}
 	.client-logos{
 		text-align: center;
 		margin: 0 -3rem -3rem 0;
@@ -101,4 +102,8 @@ header{
 		text-align: center;
 	}
 }
-@media only screen and (max-width: $mobile) {}
+@media only screen and (max-width: $mobile) {
+	header{
+		h1{height: 18rem;}
+	}
+}

@@ -279,11 +279,11 @@ body, p, li, figcaption {
 }
 
 p a, ul a, ol a, figcaption a {
-  color: #503296;
+  color: #b3b3e6;
 }
 
 p a:hover, ul a:hover, ol a:hover, figcaption a:hover {
-  color: #b8b8e1;
+  color: #aeaeeb;
 }
 
 h1 {
@@ -366,7 +366,8 @@ strong, b, em {
 }
 
 hr {
-  border-color: #821e96;
+  border-color: rgba(184, 184, 225, 0.4);
+  margin: 3rem 1.8rem;
 }
 
 .txt-highlight {
@@ -432,6 +433,8 @@ hr {
   right: 0;
   width: 100%;
   height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
   z-index: 1;
 }
 

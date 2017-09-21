@@ -8,13 +8,7 @@
 
 	<ul class="menu">
 		{% for menu_item in site.data.menu %}
-		<li
-			{% if page.nav == "{{ menu_item.name }}" %}
-				class="nav-item active"
-			{% else %}
-				class="nav-item"
-			{% endif %}
-		>
+		<li class="nav-item">
 
 			<a href="{{ site.url }}{{ site.baseurl }}{{ menu_item.url }}">
 				<h5>{{ menu_item.name }}</h5>
