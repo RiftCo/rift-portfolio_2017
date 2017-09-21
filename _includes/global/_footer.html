@@ -47,7 +47,7 @@
 			{% for contact in site.data.contact %}
 			<li>
 				<a class="contact_link" href="{{ contact.url }}" target="_blank" title="{{ contact.name }} Digital Rift" rel="noopener">
-					{% if contact.icon %}
+					{% if contact.icon != '' %}
 						<img data-src="{{ site.url }}{{ site.baseurl }}{{ contact.icon }}" height="18" width="18" alt="{{ contact.name }} Digital Rift" />
 					{% endif %}
 					<p>{{ contact.user }}</p>
