@@ -18,12 +18,6 @@ layout: -global
 	</div>
 </header>
 
-<div id="typed-strings">
-    <p>Typed.js is a <strong>JavaScript</strong> library.</p>
-    <p>It <em>types</em> out sentences.</p>
-</div>
-<span id="typed"></span>
-
 
 
 {{ content }}
@@ -54,20 +48,7 @@ layout: -global
 	});
 
 	$('#typing').typeIt({
-		strings: [{% for title in site.data.title %}"{{title.type}}",{% endfor %}],
+		strings: [{% for type in site.data.title %}"{{type.title}}",{% endfor %}],
      // options
 });
-</script>
-
-
-
-
-
-
-<script type="text/javascript">
-//Define first typing example:
-new TypingText(document.getElementById("pagetitle"));
-
-//Type out examples:
-TypingText.runAll();
 </script>
