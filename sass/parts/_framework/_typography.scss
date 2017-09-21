@@ -81,7 +81,7 @@ strong,b,em{
 	background-color: $shade-2;
 	font-weight: inherit !important;
 }
-hr{border-color: $shade-2}
+hr{border-color: transparentize($brand-alt, .6)}
 
 //.dark{
 	//background-color: $background-dark !important;

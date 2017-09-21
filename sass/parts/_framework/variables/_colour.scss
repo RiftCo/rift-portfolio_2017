@@ -7,8 +7,8 @@ $shade-2: 					#821e96;
 $shade-3: 					#484557;
 $shade-4: 					#22202E;
 
-$link-colour-before: $brand;
-$link-colour-after: $brand-alt;
+$link-colour-before: saturate($brand-alt, 10);
+$link-colour-after: saturate($brand-alt, 20);
 
 $text-colour: rgba(255,255,255,.88);
 $txt-lighter: lighten($text-colour, 30);
