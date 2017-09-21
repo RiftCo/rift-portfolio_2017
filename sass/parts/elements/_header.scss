@@ -102,4 +102,8 @@ header{
 		text-align: center;
 	}
 }
-@media only screen and (max-width: $mobile) {}
+@media only screen and (max-width: $mobile) {
+	header{
+		h1{height: 18rem;}
+	}
+}
