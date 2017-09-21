@@ -433,6 +433,8 @@ hr {
   right: 0;
   width: 100%;
   height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
   z-index: 1;
 }
 
@@ -573,6 +575,10 @@ header .scroll .inside {
   }
 }
 
+footer {
+  padding-bottom: 12rem;
+}
+
 footer h6 {
   color: #b8b8e1;
 }
@@ -582,7 +588,7 @@ footer .legal {
 }
 
 #contact {
-  padding: 12rem 1.8rem;
+  padding: 12rem 1.8rem 0 1.8rem;
 }
 
 #contact ul {
@@ -832,7 +838,6 @@ footer .legal {
   overflow: hidden;
   font-size: 0;
   line-height: 1em;
-  box-shadow: 0 0 0 transparent;
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -865,13 +870,13 @@ footer .legal {
   transition-delay: .1s;
 }
 
-.works li:hover {
-  box-shadow: 0 1.2rem 3.6rem rgba(0, 0, 0, 0.3);
-}
-
 .works li:hover h5, .works li:hover h6 {
   transform: translateY(0);
   opacity: 1;
+}
+
+.works li:hover img {
+  opacity: .3;
 }
 
 .works img {

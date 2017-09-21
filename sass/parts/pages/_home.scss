@@ -101,7 +101,7 @@
 		overflow: hidden;
 		font-size: 0;
 		line-height: 1em;
-		box-shadow: 0 0 0 transparent;
+		//box-shadow: 0 0 0 transparent;
 		transition: all 1s $transition-easeOutCirc;
 		a{width: 100%}
 		.details{
@@ -124,11 +124,12 @@
 			h6{transition-delay: .1s}
 		}
 		&:hover{
-			box-shadow: 0 1.2rem 3.6rem rgba(0, 0, 0, 0.3);
+			//box-shadow: 0 1.2rem 3.6rem rgba(0, 0, 0, 0.3);
 			h5,h6{
 				transform: translateY(0);
 				opacity: 1;
 			}
+			img{opacity: .3}
 		}
 	}
 	img{
