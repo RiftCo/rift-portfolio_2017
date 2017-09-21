@@ -427,6 +427,7 @@ hr {
 
 .background {
   position: absolute;
+  background-size: cover;
   top: 0;
   bottom: 0;
   left: 0;
