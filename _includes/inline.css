@@ -514,6 +514,10 @@ header .title {
   text-align: center;
 }
 
+header strong {
+  padding: 0 !important;
+}
+
 header .client-logos {
   text-align: center;
   margin: 0 -3rem -3rem 0;
@@ -577,5 +581,11 @@ header .scroll .inside {
   .logo {
     width: 100%;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  header h1 {
+    height: 18rem;
   }
 }
