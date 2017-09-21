@@ -1,15 +1,12 @@
 ---
 layout: article
 date: 2016-08-30 00:00:00 +0000
-title: Quisque eleifend finibus ex
-client: Name
-services: Planning, Design, Development
-description: Praesent sed malesuada dolor, et posuere nibh. Ut quis tincidunt lectus, ornare commodo mi.
+title: Coming Soon..
+client: MnM Esports
+services: Coming Soon
+description: MnM is an ever expanding eSports Organisation based in the UK.
 tags:
-- Twosome
-- Threesome
-- Foursome
-- Fivesome
+- Coming Soon
 categories: project
 image: "/img/demo/example_5.jpg"
 ---

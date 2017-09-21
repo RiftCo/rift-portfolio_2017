@@ -1,97 +1,28 @@
 ---
 layout: article
 date: 2017-01-10 00:00:00 +0000
-title: Morbi auctor vitae arcu eu consectetur.
-client: Name
+title: Tracking and comparing esports betting odds live
+client: Sickodds
 services: Planning, Design, Development
-description: Phasellus quis neque a dolor mollis imperdiet in ut orci. Sed ac sapien vel purus tincidunt dapibus. Mauris ac ornare justo. Phasellus non erat velit. Maecenas justo nulla, efficitur id metus nec, interdum aliquet purus.
+description: Sickodds 
 tags:
-- Onesome
-- Fivesome
+- WordPress
 categories: project
 image: "/img/demo/example_3.jpg"
 ---
-### Headings
 
-# Heading 1
+### The Challenge
 
-## Heading 2
+Sickodds is a betting comparison platform that focusses on arguably the best sport of all. Esports.
 
-### Heading 3
+Built on WordPress, we worked with Sickodds to create a scalable platform that would be able to regularly pull in the lastest esports odds from across a vast range of providers, then collate and present that data.
 
-#### Heading 4
-
-##### Heading 5
-
-###### Heading 6
+The website now features a fantastic range of esports betting odds, individual provider reviews and also an blog of industry news and predictions.
 
 ---
 
-### Text
+<img src="//placehold.it/960x600" />
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quis quos in quas nesciunt at accusantium dolor distinctio enim. Blanditiis officia, aliquid voluptas iste fuga tempore veniam aliquam deserunt in!
+<img src="//placehold.it/960x600" />
 
-The following snippet of text is rendered as **bold text**.
-
-The following snippet of text is rendered as *italicized text*.
-
-[I'm an inline-style link](https://www.google.com)
-
-For example, `<section>` should be wrapped as inline.
-
----
-
-### Unordered List
-
-* Lorem ipsum dolor sit amet, consectetur adipisicing.
-* Lorem ipsum dolor sit amet.
-* Lorem ipsum dolor sit amet, consectetur.
-	* Lorem ipsum dolor sit amet, consectetur adipisicing.
-	* Lorem ipsum dolor sit amet.
-	* Lorem ipsum dolor sit amet, consectetur.
-	* Lorem ipsum dolor.
-* Lorem ipsum dolor.
-* Lorem ipsum dolor sit amet.
-
-### Ordered List
-
-1. Lorem ipsum dolor sit amet, consectetur adipisicing.
-1. Lorem ipsum dolor sit amet.
-1. Lorem ipsum dolor sit amet, consectetur.
-	1. Lorem ipsum dolor sit amet, consectetur adipisicing.
-	1. Lorem ipsum dolor sit amet.
-	1. Lorem ipsum dolor sit amet, consectetur.
-	1. Lorem ipsum dolor.
-1. Lorem ipsum dolor.
-1. Lorem ipsum dolor sit amet.
-
----
-
-### Table
-
-First Header | Second Header
------------- | -------------
-Content Cell | Content Cell
-Content Cell | Content Cell
-Content Cell | Content Cell
-
----
-
-### Blockquote
-
-> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi beatae tempora assumenda dolores ut dolore blanditiis fugit ad ex nam labore adipisci dicta esse, velit dolorum itaque inventore illo ratione!
-
----
-
-### Code
-
-	var num1 = 3;
-	var num2 = 2;
-
-	function add(a, b) {
-		return a + b;
-	}
-
-	var sum = add(num1, num2);
-
-	console.log(sum);
+<img src="//placehold.it/960x600" />
