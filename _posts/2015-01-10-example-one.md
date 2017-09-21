@@ -9,6 +9,7 @@ tags:
 - Onesome
 - Twosome
 - Threesome
+categories: project
 image: "/img/demo/example_1.jpg"
 ---
 ### Headings

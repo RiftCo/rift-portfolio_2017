@@ -8,6 +8,7 @@ description: Suspendisse gravida vitae velit in accumsan. Sed mattis tristique a
 tags:
 - Onesome
 - Foursome
+categories: project
 image: "/img/demo/example_4.jpg"
 ---
 ### Headings

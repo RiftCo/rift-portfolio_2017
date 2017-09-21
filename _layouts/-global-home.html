@@ -18,6 +18,12 @@ layout: -global
 	</div>
 </header>
 
+<div id="typed-strings">
+    <p>Typed.js is a <strong>JavaScript</strong> library.</p>
+    <p>It <em>types</em> out sentences.</p>
+</div>
+<span id="typed"></span>
+
 
 
 {{ content }}
@@ -34,13 +40,20 @@ layout: -global
 <!-- imports -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="{{ site.url }}{{ site.baseurl }}/js/particles.js"></script>
-<script src="{{ site.url }}{{ site.baseurl }}/js/app.js" async></script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/app.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/typed.js"></script>
 
 <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/style.css">
 
 <script src="{{ site.url }}{{ site.baseurl }}/js/jquery.unveil.js"></script>
 
 <!-- scripts -->
+<script>
+  var typed = new Typed('.element', {
+    stringsElement: '#typed-strings'
+  });
+</script>
+
 <script>
 	$(document).ready(function() {
 		$("img").unveil();

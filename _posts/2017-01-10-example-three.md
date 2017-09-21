@@ -8,6 +8,7 @@ description: Phasellus quis neque a dolor mollis imperdiet in ut orci. Sed ac sa
 tags:
 - Onesome
 - Fivesome
+categories: project
 image: "/img/demo/example_3.jpg"
 ---
 ### Headings

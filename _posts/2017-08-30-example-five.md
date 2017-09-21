@@ -10,6 +10,7 @@ tags:
 - Threesome
 - Foursome
 - Fivesome
+categories: project
 image: "/img/demo/example_5.jpg"
 ---
 ### Headings
