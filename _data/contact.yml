@@ -11,7 +11,7 @@
 - name: Behance
   user: RiftCo
   icon: /img/icon_behance.svg
-  url: /img/sponsor/sponsor-1@2x.png
+  url: https://www.behance.net/RiftCo
 
 - name: Email
   user: hello@rift.co.uk
