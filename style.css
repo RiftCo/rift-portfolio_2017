@@ -328,7 +328,18 @@ footer .legal {
 }
 
 @media only screen and (max-width: 860px) {
-  #services li {
+  .works {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .works li h5, .works li h6 {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .works li img {
+    opacity: .6;
+  }
+  #services li, .works li {
     width: 100%;
   }
 }

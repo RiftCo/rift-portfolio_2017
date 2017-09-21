@@ -144,7 +144,17 @@
 @media only screen and (max-width: $maxbody) {}
 @media only screen and (max-width: $minbody) {}
 @media only screen and (max-width: $tablet) {
-	#services{
+	.works{
+		flex-wrap: wrap;
+		li{
+			h5,h6{
+				transform: translateY(0);
+				opacity: 1;
+			}
+			img{opacity: .6}
+		}
+	}
+	#services,.works{
 		li{width: 100%;}
 	}
 }
