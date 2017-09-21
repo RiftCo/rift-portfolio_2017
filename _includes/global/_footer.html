@@ -8,20 +8,15 @@
 		</div>
 
 		<ul class="team-members">
+			{% for member in site.data.team %}
 			<li>
-				<div class="avatar"><img data-src="{{ site.url }}{{ site.baseurl }}/img/author/avi.jpg" width="93" height="93" alt="An awesome developer" /></div>
+				<div class="avatar"><img data-src="{{ site.url }}{{ site.baseurl }}{{ member.avatar }}" width="93" height="93" alt="An awesome esports {{ member.title }}" /></div>
 				<div class="name">
-					<h3>Tom Wade</h3>
-					<h6>Website Development</h6>
+					<h3>{{ member.name }}</h3>
+					<h6>{{ member.skill }}t</h6>
 				</div>
 			</li>
-			<li>
-				<div class="avatar"><img data-src="{{ site.url }}{{ site.baseurl }}/img/author/avi.jpg" width="93" height="93" alt="An awesome designer" /></div>
-				<div class="name">
-					<h3>Ollie Taylor</h3>
-					<h6>Digital Design</h6>
-				</div>
-			</li>
+			{% endfor %}
 		</ul>
 
 	</div>

@@ -521,8 +521,11 @@ header strong {
 
 header .client-logos {
   text-align: center;
-  margin: 0 -3rem -3rem 0;
   padding-bottom: 6rem;
+}
+
+header .client-logos ul {
+  margin: 0 -3rem -3rem 0;
 }
 
 header .client-logos h6 {

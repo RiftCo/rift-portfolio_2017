@@ -71,6 +71,7 @@
 	ul{
 		display: flex;
 		flex-wrap: wrap;
+		margin: 0;
 	}
 	li{
 		width: calc(50% - 1.8rem;);
@@ -148,8 +149,8 @@
 		flex-wrap: wrap;
 		li{
 			h5,h6{
-				transform: translateY(0);
-				opacity: 1;
+				transform: translateY(0) !important;
+				opacity: 1 !important;
 			}
 			img{opacity: .6}
 		}

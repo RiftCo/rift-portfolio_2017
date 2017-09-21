@@ -44,8 +44,8 @@ header{
 	strong{padding: 0 !important}
 	.client-logos{
 		text-align: center;
-		margin: 0 -3rem -3rem 0;
 		padding-bottom: 6rem;
+		ul{margin: 0 -3rem -3rem 0;}
 		h6{
 			color: $brand-alt;
 			margin-bottom: 3rem;

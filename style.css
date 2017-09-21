@@ -238,6 +238,7 @@ footer .legal {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0;
 }
 
 #services li {
@@ -333,8 +334,8 @@ footer .legal {
         flex-wrap: wrap;
   }
   .works li h5, .works li h6 {
-    transform: translateY(0);
-    opacity: 1;
+    transform: translateY(0) !important;
+    opacity: 1 !important;
   }
   .works li img {
     opacity: .6;

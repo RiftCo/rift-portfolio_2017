@@ -1,0 +1,9 @@
+- name: Tom Wade
+  title: developer
+  skill: Website Development
+  avatar: /img/staff/avi-top.jpg
+
+- name: Ollie Taylor
+  title: designer
+  skill: Digital Design
+  avatar: /img/staff/avi-ollie.jpg
