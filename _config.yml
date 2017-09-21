@@ -18,7 +18,7 @@ webmaster_verifications:
 
 url: "https://riftco.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 nowurl: ""
-baseurl: "rift-portfolio_2017" # the subpath of your site, e.g. /blog
+baseurl: "rift-portfolio_2017/" # the subpath of your site, e.g. /blog
 permalink: /:categories/:slug
 paginate: 9
 paginate_path: "/works/page:num/"
@@ -159,3 +159,6 @@ exclude:
    - package-lock.json
    - package.json
    - gulpfile.js
+
+host: 0.0.0.0
+#port: 9876
