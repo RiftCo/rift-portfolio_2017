@@ -16,7 +16,7 @@ webmaster_verifications:
 # Navigation
 ############################################################
 
-url: "http://digitalrift.co/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://digitalrift.co" # the base hostname & protocol for your site, e.g. http://example.com
 nowurl: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 permalink: /:categories/:slug
