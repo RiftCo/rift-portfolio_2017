@@ -510,6 +510,12 @@ nav .nav-item .active {
   border-bottom-color: #821e96;
 }
 
+#logotitle {
+  position: absolute;
+  top: -200%;
+  left: -200%;
+}
+
 header .title {
   padding: 15rem 3rem 20rem 3rem;
   text-align: center;

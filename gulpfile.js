@@ -193,7 +193,7 @@ gulps.registerTasks({
 			done();
 		}, 2000);
 	}),
-	
+
 
 	"jekyll" : (function(done) {
 		setTimeout(function() {
@@ -403,7 +403,7 @@ gulps.registerSeries('build',
 		"convert_build_sass_inline",
 
 		// Jekyll
-		"jekyll_build"
+		//"jekyll_build"
 
 	], function() {
 	console.log(util.colors.green.bold('PUBLISH: ') + util.colors.white.bold('COMPLETED') + util.colors.red.bold('Watching...'))
