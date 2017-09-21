@@ -4,12 +4,12 @@
 
 // Footer
 footer{
-	padding: 12rem 1.8rem;
 	h6{color: $brand-alt}
 	.legal{margin-top: 6rem}
 }
 
 #contact{
+	padding: 12rem 1.8rem;
 	ul{
 		margin: -.9rem;
 		li{display: inline-block;}
@@ -30,6 +30,8 @@ footer{
 		}
 	}
 }
+
+.team{margin-bottom: 6rem;}
 
 @media only screen and (max-width: $maxbody) {}
 @media only screen and (max-width: $minbody) {}
