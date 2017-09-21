@@ -16,9 +16,9 @@ webmaster_verifications:
 # Navigation
 ############################################################
 
-url: "https://riftco.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://digitalrift.co/" # the base hostname & protocol for your site, e.g. http://example.com
 nowurl: ""
-baseurl: "rift-portfolio_2017" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 permalink: /:categories/:slug
 paginate: 9
 paginate_path: "/works/page:num/"
@@ -35,9 +35,7 @@ page-home: "/"
 
 title: Rift &middot; eSports Web Design
 short_title: Rift
-description: I design effective user experiences and interfaces that help users understand
-    just how awesome you and your service are. Let’s get in touch to talk about how
-    I can find a solution to your needs.
+description: We believe in elevating the standard of design and development within eSports. From conception, to completion. We support your projects throughout the entire proccess.
 logo: /img/logo.png
 logo_svg: /img/logo.svg
 
@@ -56,7 +54,7 @@ defaults:
 ############################################################
 
 author: {{ site.data.author.name }}
-email: contact@olliejt.com
+email: hello@digitalrift.co
 twitter:
   username: RiftCo
 facebook:
