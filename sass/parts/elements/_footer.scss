@@ -4,12 +4,13 @@
 
 // Footer
 footer{
+	padding-bottom: 12rem;
 	h6{color: $brand-alt}
 	.legal{margin-top: 6rem}
 }
 
 #contact{
-	padding: 12rem 1.8rem;
+	padding: 12rem 1.8rem 0 1.8rem;
 	ul{
 		margin: -.9rem;
 		li{display: inline-block;}
