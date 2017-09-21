@@ -5,7 +5,7 @@ layout: -global
 <header>
 	{% include global/_nav.html %}
 	<div class="title">
-		<h1>We design and build <strong>online brands for gamers.</strong></h1>
+		<h1>We design and build <strong id="typing">online brands for gamers.</strong></h1>
 	</div>
 	<div class="client-logos">
 		<h6>Just some of the awesome gamers we’ve enjoyed working with...</h6>
@@ -41,7 +41,7 @@ layout: -global
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="{{ site.url }}{{ site.baseurl }}/js/particles.js"></script>
 <script src="{{ site.url }}{{ site.baseurl }}/js/app.js"></script>
-<script src="{{ site.url }}{{ site.baseurl }}/js/typed.js"></script>
+<script src="{{ site.url }}{{ site.baseurl }}/js/typeit.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="{{ site.url }}{{ site.baseurl }}/style.css">
 
@@ -49,13 +49,25 @@ layout: -global
 
 <!-- scripts -->
 <script>
-  var typed = new Typed('.element', {
-    stringsElement: '#typed-strings'
-  });
-</script>
-
-<script>
 	$(document).ready(function() {
 		$("img").unveil();
 	});
+
+	$('#typing').typeIt({
+		strings: [{% for title in site.data.title %}"{{title.type}}",{% endfor %}],
+     // options
+});
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+//Define first typing example:
+new TypingText(document.getElementById("pagetitle"));
+
+//Type out examples:
+TypingText.runAll();
 </script>
