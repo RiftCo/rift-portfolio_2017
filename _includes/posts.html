@@ -1,15 +1,17 @@
-<section class="card-container" id="{{ page.posts_id }}">
+<ul class="works">
 	{% for post in site.posts limit:3 %}
 
-		{% if post.behance == true %}
-			{% include card.html %}
-
-
-		{% else %}
-			{% include card_alt.html %}
-
-
-		{% endif %}
+		<li>
+			<a href="{{ site.baseurl }}{{ post.url }}" target="_self">
+				<div class="details">
+					<span>
+						<h5>{{ post.client }}</h5>
+						<h6>{{ post.services }}</h6>
+					</span>
+				</div>
+				<img data-src="{{ site.url }}{{ site.baseurl }}{{ post.image }}" width="616" height="346" title="{{ post.client }}" alt="{{ post.services }} for Sickodds" />
+			</a>
+		</li>
 
 	{% endfor %}
-</section>
+</ul>

@@ -42,7 +42,7 @@ var paths = {
 
 	// Build
 	build_css:							'./_site/*.css',
-	build_html:							'./_site/**/*.html'
+	build_html:							'./_site/*.html'
 };
 
 
@@ -51,7 +51,224 @@ var paths = {
 // ----------------------------------------------------------------------------
 gulps.registerTasks({
 
-		// Styles
+	////
+	//// DEVELOPMENT
+	////
+	// sass
+	"convert_dev_sass" : (function(done) {
+		setTimeout(function() {
+			gulp.src(paths.sass_source_dev)
+			.pipe(plumber())
+
+			// Format
+			.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+
+			.pipe(rename({basename: 'style'}))
+
+			// Export
+			.pipe(gulp.dest(paths.dev))
+
+			console.log(util.colors.blue.bold('\n[DEV] Compiling SASS\n')
+		)
+			done();
+		}, 2500);
+	}),
+	// watch
+	"watch_dev" : (function(done) {
+		setTimeout(function() {
+			gulp.watch(paths.sass, 							["convert_dev_sass"])
+			gulp.watch(paths.build_html, 				["updated_dev"])
+			gulp.watch(paths.build_css, 				["updated_dev"])
+
+			done(
+				console.log(util.colors.blue.bold('\n[DEV] Watching...\n'))
+			);
+		}, 2500);
+	}),
+	// update
+	"updated_dev" : (function() {
+		setTimeout(function() {
+
+			gulp.src(paths.build_serve)
+			.pipe(connect.reload(
+				console.log(util.colors.blue.bold('\n[DEV] UPDATED!\n'))
+			)) // Reload Browser
+
+		}, 2500);
+	}),
+
+
+
+	////
+	//// BUILD
+	////
+	// sass
+	"convert_build_sass_inline" : (function(done) {
+		setTimeout(function() {
+			gulp.src(paths.sass_source_inline)
+			.pipe(plumber())
+
+			// Prefix & Compress
+			//.pipe(autoprefixer('last 2 versions'))
+			.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+
+			.pipe(autoprefixer({
+				browsers: ['last 2 versions'],
+				cascade: true
+			}))
+
+			// Export
+			.pipe(gulp.dest(paths.jekyll_includes))
+
+			console.log(util.colors.yellow.bold('\n[BUILD] Compiling SASS\n')
+		)
+			done();
+		}, 2500);
+	}),
+	"convert_build_sass" : (function(done) {
+		setTimeout(function() {
+			gulp.src(paths.sass_source_build)
+			.pipe(plumber())
+
+			// Prefix & Compress
+			//.pipe(autoprefixer('last 2 versions'))
+			.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+
+			.pipe(autoprefixer({
+				browsers: ['last 2 versions'],
+				cascade: true
+			}))
+
+			// Export
+			.pipe(gulp.dest(paths.dev))
+
+			console.log(util.colors.yellow.bold('\n[BUILD] Compiling inline SASS\n')
+		)
+			done();
+		}, 2500);
+	}),
+	// watch
+	"watch_build" : (function(done) {
+		setTimeout(function() {
+			gulp.watch(paths.sass, 										["convert_build_sass","convert_build_sass_inline"])
+			gulp.watch(paths.build_html, 							["updated_build"])
+			gulp.watch(paths.build_css, 							["updated_build"])
+
+
+			done(
+				console.log(util.colors.yellow.bold('[BUILD] Watching...'))
+			);
+		}, 2500);
+	}),
+	// update
+	"updated_build" : (function() {
+		setTimeout(function() {
+
+			gulp.src(paths.build_serve)
+			.pipe(connect.reload(
+				console.log(util.colors.green.bold('[BUILD] UPDATED!'))
+			)) // Reload Browser
+
+		}, 2500);
+	}),
+
+
+
+	////
+	//// Jekyll
+	////
+	"jekyll" : (function(done) {
+		setTimeout(function() {
+
+			const killjekyll = child.spawn('pkill', [
+				'-f',
+				'--jekyll'
+			]);
+
+			const jekyll = child.spawn('jekyll', [
+				'serve',
+				'--watch',
+				//'--detach',
+				'--incremental'
+				//'--drafts',
+				//'--port 9876'
+			]);
+
+			const jekyllLogger = (buffer) => {
+				buffer.toString()
+					.split(/\n/)
+					.forEach((message) => util.log('Jekyll: ' + message));
+			};
+
+			jekyll.stdout.on('data', jekyllLogger);
+			jekyll.stderr.on('data', jekyllLogger);
+
+			done();
+		}, 5000);
+	}),
+	"jekyll_build" : (function(done) {
+		setTimeout(function() {
+
+			const jekyll = child.spawn('jekyll', [
+				'build',
+				'--drafts'
+			]);
+
+			const jekyllLogger = (buffer) => {
+				buffer.toString()
+					.split(/\n/)
+					.forEach((message) => util.log('Jekyll: ' + message));
+			};
+
+			jekyll.stdout.on('data', jekyllLogger);
+			jekyll.stderr.on('data', jekyllLogger);
+
+			done();
+		}, 5000);
+	}),
+
+
+
+	////
+	//// Server
+	////
+	"connect" : (function(done) {
+		setTimeout(function() {
+
+			connect.server({
+				root: paths.build,
+				livereload: 'true'
+			});
+
+			done(
+				console.log(util.colors.green.bold('\nConnected...\n'))
+			);
+		}, 200);
+	}),
+
+
+
+	////
+	//// Clean
+	////
+	"clean_css" : (function(done) {
+		setTimeout(function() {
+
+			const del = require('del');
+			del(['./style.css', 'style-dev.css', './_includes/inline.css', './inline.css'], {force: true}).then(paths => {
+				console.log(
+					util.colors.red('\nAll [CSS] files in '), util.colors.bold.red('Jekyll'), util.colors.red('deleted!\n'), util.colors.magenta( paths.join('\n'))
+				);
+			});
+			done();
+		}, 500);
+	}),
+
+
+
+
+
+		// Delete
 		"upper" : (function(done) {
 			setTimeout(function() {
 			  gulp.src('*.txt')
@@ -59,79 +276,8 @@ gulps.registerTasks({
 			    .pipe(gulp.dest('upper_files'));
 
 				done();
-			},
-			2000);
-
+			}, 2000);
 		}),
-
-		// Styles
-		"convert_dev_sass" : (function(done) {
-			setTimeout(function() {
-				gulp.src(paths.sass_source_dev)
-				.pipe(plumber())
-
-				// Format
-				.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
-
-				.pipe(rename({basename: 'style'}))
-
-				// Export
-				.pipe(gulp.dest(paths.dev))
-
-				console.log(util.colors.yellow.bold('\n[DEV] Compiling SASS...\n')
-			)
-				done();
-			},
-			2500);
-		}),
-		"convert_build_sass_inline" : (function(done) {
-			setTimeout(function() {
-				gulp.src(paths.sass_source_inline)
-				.pipe(plumber())
-
-				// Prefix & Compress
-				//.pipe(autoprefixer('last 2 versions'))
-				.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-
-				.pipe(autoprefixer({
-					browsers: ['last 2 versions'],
-					cascade: true
-				}))
-
-				// Export
-				.pipe(gulp.dest(paths.jekyll_includes))
-
-				console.log(util.colors.yellow.bold('\n[BUILD] Compiling SASS...\n')
-			)
-				done();
-			},
-			2500);
-		}),
-		"convert_build_sass" : (function(done) {
-			setTimeout(function() {
-				gulp.src(paths.sass_source_build)
-				.pipe(plumber())
-
-				// Prefix & Compress
-				//.pipe(autoprefixer('last 2 versions'))
-				.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-
-				.pipe(autoprefixer({
-					browsers: ['last 2 versions'],
-					cascade: true
-				}))
-
-				// Export
-				.pipe(gulp.dest(paths.dev))
-
-				console.log(util.colors.yellow.bold('\n[BUILD] Compiling inline SASS...\n')
-			)
-				done();
-			},
-			2500);
-		}),
-
-		// Delete
 		"prefix" : (function(done) {
 			setTimeout(function() {
 				gulp.src(paths.build_css)
@@ -201,105 +347,6 @@ gulps.registerTasks({
 				done();
 			}, 1000);
 		}),
-
-		// Jekyll
-		"jekyll" : (function(done) {
-			setTimeout(function() {
-
-			  const jekyll = child.spawn('jekyll', ['serve',
-			    '--watch',
-			    '--incremental',
-			    '--drafts'
-			  ]);
-
-			  const jekyllLogger = (buffer) => {
-			    buffer.toString()
-			      .split(/\n/)
-			      .forEach((message) => util.log('Jekyll: ' + message));
-			  };
-
-			  jekyll.stdout.on('data', jekyllLogger);
-			  jekyll.stderr.on('data', jekyllLogger);
-
-				done();
-			}, 2500);
-		}),
-
-		// Server
-		"watch_dev" : (function(done) {
-			setTimeout(function() {
-				gulp.watch(paths.sass, 	["convert_dev_sass"])
-				gulp.watch(paths.build_html, 				["updated_dev"])
-				gulp.watch(paths.build_css, 				["updated_dev"])
-
-				done(
-					console.log(util.colors.yellow.bold('[DEV] Watching...'))
-				);
-			}, 2500);
-		}),
-		"watch_build" : (function(done) {
-			setTimeout(function() {
-				gulp.watch(paths.sass_source_build, 			["convert_build_sass"])
-				gulp.watch(paths.sass_source_inline, 			["convert_build_sass_inline"])
-				gulp.watch(paths.build_html, 							["updated_build"])
-				gulp.watch(paths.build_css, 							["updated_build"])
-
-
-				done(
-					console.log(util.colors.yellow.bold('[BUILD] Watching...'))
-				);
-			}, 2500);
-		}),
-
-		"connect" : (function(done) {
-			setTimeout(function() {
-
-				connect.server({
-					root: paths.build_serve,
-					livereload: 'true'
-				});
-
-				done(
-					console.log(util.colors.yellow.bold('Connected...'))
-				);
-			}, 200);
-		}),
-
-		"updated_dev" : (function() {
-			setTimeout(function() {
-
-				gulp.src(paths.build_serve)
-				.pipe(connect.reload(
-					console.log(util.colors.green.bold('[DEV] UPDATED!'))
-				)) // Reload Browser
-
-			}, 2500);
-		}),
-		"updated_build" : (function() {
-			setTimeout(function() {
-
-				gulp.src(paths.build_serve)
-				.pipe(connect.reload(
-					console.log(util.colors.green.bold('[BUILD] UPDATED!'))
-				)) // Reload Browser
-
-			}, 2500);
-		}),
-
-		// Build
-		"clean_css" : (function(done) {
-			setTimeout(function() {
-
-				const del = require('del');
-				del(['./style.css', 'style-dev.css', './_includes/inline.css', './inline.css'], {force: true}).then(paths => {
-					console.log(
-						util.colors.red('\nAll [CSS] files in '), util.colors.bold.red('Jekyll'), util.colors.red('deleted!\n'), util.colors.magenta( paths.join('\n'))
-					);
-				});
-				done();
-			}, 500);
-		}),
-
 }),
 
 // Execute Tasks
@@ -308,11 +355,10 @@ gulp.task('default', function() {
 	console.log(util.colors.green.bold('OllieJT Quickstart: ') + util.colors.red.bold('Learn more here ') + util.colors.blue('https://github.com/OllieJT/quickstart'))
 });
 
-
-gulps.registerSeries('cleancss',
+gulps.registerSeries('jekyll',
 	[
-		// HTML
-		"clean_css"
+		// Jekyll
+		"jekyll",
 
 	], function() {
 	console.log(util.colors.green.bold('DEV MODE: ') + util.colors.white.bold('ENABLED') + util.colors.red.bold(' Watching...'))
@@ -320,13 +366,14 @@ gulps.registerSeries('cleancss',
 
 gulps.registerSeries('dev',
 	[
-		// HTML
+		// CSS
+		"clean_css",
 		"convert_dev_sass",
 		"convert_build_sass_inline",
-		"jekyll",
 
 		// Localhost
 		"connect",
+		"jekyll",
 		"watch_dev"
 
 	], function() {
@@ -335,23 +382,13 @@ gulps.registerSeries('dev',
 
 gulps.registerSeries('build',
 	[
+		// CSS
 		"clean_css",
-
-		//CSS
 		"convert_build_sass",
 		"convert_build_sass_inline",
 
-		//"prefix_inline",						// Prefix CSS
-		//"minify-css_inline",				// Minify CSS
-		//CSS
-		//"prefix",
-		//"minify-css",				// Minify CSS
-
-		"jekyll",
-
-		// Localhost
-		"connect",
-		"watch_build"
+		// Jekyll
+		"jekyll_build"
 
 	], function() {
 	console.log(util.colors.green.bold('PUBLISH: ') + util.colors.white.bold('COMPLETED') + util.colors.red.bold('Watching...'))

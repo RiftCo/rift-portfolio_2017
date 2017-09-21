@@ -2,6 +2,8 @@
 layout: article
 date: 2016-01-10 00:00:00 +0000
 title: Suspendisse et elit in enim ornare consequat.
+client: Name
+services: Planning, Design, Development
 description: Maecenas nibh enim, dignissim at nisi sed, interdum luctus nibh. Fusce quis justo suscipit, mattis leo eu, pretium dui. Quisque eleifend finibus ex, eget volutpat sem. Duis sodales sit amet massa vitae euismod.
 tags:
 - Twosome

@@ -2,6 +2,8 @@
 layout: article
 date: 2017-01-10 00:00:00 +0000
 title: Morbi auctor vitae arcu eu consectetur.
+client: Name
+services: Planning, Design, Development
 description: Phasellus quis neque a dolor mollis imperdiet in ut orci. Sed ac sapien vel purus tincidunt dapibus. Mauris ac ornare justo. Phasellus non erat velit. Maecenas justo nulla, efficitur id metus nec, interdum aliquet purus.
 tags:
 - Onesome

@@ -68,6 +68,10 @@
 	display: flex;
 	flex-wrap: wrap;
 	background-color: $background;
+	ul{
+		display: flex;
+		flex-wrap: wrap;
+	}
 	li{
 		width: calc(50% - 1.8rem;);
 		margin: 0 1.8rem 1.8rem 0;
@@ -99,6 +103,7 @@
 		line-height: 1em;
 		box-shadow: 0 0 0 transparent;
 		transition: all 1s $transition-easeOutCirc;
+		a{width: 100%}
 		.details{
 			position: absolute;
 			width: 100%;

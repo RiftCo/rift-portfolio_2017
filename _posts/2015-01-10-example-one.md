@@ -2,6 +2,8 @@
 layout: article
 date: 2015-01-10 00:00:00 +0000
 title: Maecenas nibh enim, dignissim at nisi sed.
+client: Name
+services: Planning, Design, Development
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi hendrerit dignissim dui a mollis. Duis tempor pretium ante id tristique. Phasellus lacus metus, placerat quis commodo in, aliquet ut lectus.
 tags:
 - Onesome

@@ -2,6 +2,8 @@
 layout: article
 date: 2017-07-20 00:00:00 +0000
 title: Orci varius natoque!
+client: Name
+services: Planning, Design, Development
 description: Suspendisse gravida vitae velit in accumsan. Sed mattis tristique ante, pellentesque gravida ligula venenatis at. Mauris sagittis pellentesque elit, sit amet commodo purus viverra porta. Nam eget turpis lacus.
 tags:
 - Onesome

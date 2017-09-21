@@ -2,6 +2,8 @@
 layout: article
 date: 2016-08-30 00:00:00 +0000
 title: Quisque eleifend finibus ex
+client: Name
+services: Planning, Design, Development
 description: Praesent sed malesuada dolor, et posuere nibh. Ut quis tincidunt lectus, ornare commodo mi.
 tags:
 - Twosome
