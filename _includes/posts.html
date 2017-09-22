@@ -2,7 +2,11 @@
 	{% for post in site.posts limit:3 %}
 
 		<li>
-			<!--<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" target="_self">-->
+			{% if post.live == true %}
+			<a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}" target="_self">
+			{% endif %}
+
+
 				<div class="details">
 					<span>
 						<h5>{{ post.client }}</h5>
@@ -10,8 +14,9 @@
 					</span>
 				</div>
 				<img data-src="{{ site.url }}{{ site.baseurl }}{{ post.image }}" width="616" height="346" title="{{ post.client }}" alt="{{ post.services }} for Sickodds" />
-			<!--</a>-->
-		</li>
 
+
+			{% if post.live == true %}</a>{% endif %}
+		</li>
 	{% endfor %}
 </ul>
