@@ -1,6 +1,6 @@
 ---
 layout: article
-live: true
+live: false
 date: 2017-01-10 00:00:00 +0000
 title: Innovating the esports team website experience.
 client: OpTic Gaming

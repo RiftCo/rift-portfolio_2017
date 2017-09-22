@@ -1,6 +1,6 @@
 ---
 layout: article
-live: true
+live: false
 date: 2017-07-20 00:00:00 +0000
 title: Building a home for the game developers to connect with the fans.
 client: Battalion 1944
