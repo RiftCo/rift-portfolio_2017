@@ -10,7 +10,7 @@ tags:
 - jQuery
 - CodeIgniter
 categories: project
-image: "/img/project/thumbs/battalion.jpg"
+image: "/img/project/thumbs/esportsify.jpg"
 ---
 
 ### The Challenge
