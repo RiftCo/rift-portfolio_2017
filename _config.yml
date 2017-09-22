@@ -152,7 +152,8 @@ exclude:
    - vendor/cache/
    - vendor/gems/
    - vendor/ruby/
-   - sass
+   - sass/
+   - sass/parts/
    - .scss
    - package-lock.json
    - package.json
