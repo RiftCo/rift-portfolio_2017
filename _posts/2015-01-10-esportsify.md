@@ -1,5 +1,6 @@
 ---
 layout: article
+live: false
 date: 2017-07-20 00:00:00 +0000
 title: Making sure esports teams get the website's they deserve
 client: Esportsify
