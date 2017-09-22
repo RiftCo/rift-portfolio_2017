@@ -1,14 +1,11 @@
-- name: AOC
-  image: /img/sponsor/sponsor-1@2x.png
+- name: OpTic Gaming
+  image: /img/sponsor/client-optic.svg
 
-- name: Scuf Gaming
-  image: /img/sponsor/sponsor-2@2x.png
+- name: Battalion 1944
+  image: /img/sponsor/client-battalion.svg
 
-- name: Astro Gaming
-  image: /img/sponsor/sponsor-3@2x.png
-
-- name: Elgato Gaming
-  image: /img/sponsor/sponsor-6@2x.png
+- name: Team Infused
+  image: /img/sponsor/client-infused.svg
 
 - name: Esportsify
-  image: /img/sponsor/sponsor-7@2x.png
+  image: /img/sponsor/client-esportsify.svg
