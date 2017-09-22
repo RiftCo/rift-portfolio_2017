@@ -1,8 +1,8 @@
 {
-  "name": "OllieJT",
+  "name": "DigitalRift",
   "version": "0.1.0",
-  "description": "My Jekyll portfolio site",
-  "main": "./dev/gulpfile.js",
+  "description": "Digital Rift 2017 portfolio",
+  "main": "./gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",
     "npm-gui": "^0.3.1"
@@ -21,17 +21,20 @@
     "pretty-error": "^2.0.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "gulp clean",
+    "build": "gulp build",
+    "dev": "gulp serve"
+
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheOllieJT/theolliejt.github.git"
+    "url": "git+https://github.com/RiftCo/rift-portfolio_2017.git"
   },
   "keywords": [],
   "author": "Ollie Taylor",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TheOllieJT/theolliejt/issues"
+    "url": "https://github.com/RiftCo/rift-portfolio_2017/issues"
   },
-  "homepage": "https://github.com/TheOllieJT/theolliejt#readme"
+  "homepage": "https://github.com/RiftCo/rift-portfolio_2017#readme"
 }
