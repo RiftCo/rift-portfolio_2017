@@ -1,14 +1,15 @@
 ---
 layout: article
 date: 2017-01-10 00:00:00 +0000
-title: Tracking and comparing esports betting odds live
-client: Sickodds
+title: Innovating the esports team website experience.
+client: OpTic Gaming
 services: Planning, Design, Development
-description: Sickodds 
+description: OpTic Gaming is one of the world's leading eSports organisations. Their site had so much potential so I built an un-commissioned prototype to improve on the aesthetics and user experience. After reaching out to the CEO of OpTic Gaming, we decided to pursue the prototype and give some much needed love to the organisation's website.
 tags:
-- WordPress
+- Planning
+- Design
 categories: project
-image: "/img/demo/example_3.jpg"
+image: "/img/project/thumbs/opticgaming.jpg"
 ---
 
 ### The Challenge
